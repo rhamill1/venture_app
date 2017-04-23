@@ -1,2 +1,21 @@
 <h1>StaticPages#home</h1>
 <p>Find me in app/views/static_pages/home.html.erb</p>
+
+
+<% @partners.each do |partner| %>
+
+  <h5>
+    <%= partner.name %>
+  </h5>
+
+<% end %>
+
+<br><br>
+
+<% @companies.each do |company| %>
+
+  <h5>
+    <%= company.name %>
+  </h5>
+
+<% end %>
