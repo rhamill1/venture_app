@@ -5,3 +5,78 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Partner.create([
+  {
+    name: "John Doe",
+    title: "Partner",
+    twitter: "",
+    linkedin: "",
+    subtitle: "",
+    bio: "",
+    home_image: "",
+    bio_image: "",
+    background_image: "",
+    story_image: "",
+    story_image_text: "",
+    signature_image: ""
+  },
+  {
+    name: "Jane Domino",
+    title: "Parner",
+    twitter: "",
+    linkedin: "",
+    subtitle: "",
+    bio: "",
+    home_image: "",
+    bio_image: "",
+    background_image: "",
+    story_image: "",
+    story_image_text: "",
+    signature_image: ""
+  },
+  {
+    name: "Chris George",
+    title: "CFO",
+    twitter: "",
+    linkedin: "",
+    subtitle: "",
+    bio: "",
+    home_image: "",
+    bio_image: "",
+    background_image: "",
+    story_image: "",
+    story_image_text: "",
+    signature_image: ""
+  }
+])
+
+Company.create([
+  {
+    name: "Sellyou",
+    logo_image: "",
+    background_image: "",
+    tag_line: "",
+    linkedin: "",
+    twitter: "",
+    company_link: ""
+  },
+  {
+    name: "MarketDriver",
+    logo_image: "",
+    background_image: "",
+    tag_line: "",
+    linkedin: "",
+    twitter: "",
+    company_link: ""
+  },
+  {
+    name: "BestinClass",
+    logo_image: "",
+    background_image: "",
+    tag_line: "",
+    linkedin: "",
+    twitter: "",
+    company_link: ""
+  }
+])
