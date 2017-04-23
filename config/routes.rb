@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root to: 'static_pages#home'
+
+  get '/', to: 'static_pages#home'
+  get "/login", to: "sessions#new"
+  get "/logout", to: "sessions#destroy"
+  post "/sessions", to: "sessions#create"
+
+  resources :partners
+  resources :companies
 end
