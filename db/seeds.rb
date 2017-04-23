@@ -80,3 +80,12 @@ Company.create([
     company_link: ""
   }
 ])
+
+Admin.create([
+  {
+    username: "",
+    password_digest: ""
+  }
+
+
+])

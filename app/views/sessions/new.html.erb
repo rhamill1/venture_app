@@ -1,0 +1,13 @@
+
+<h1>Log In</h1>
+
+<%= form_for @admin, url: "/sessions", method: "POST" do |f| %>
+  <div>
+    <%= f.text_field :username, placeholder: "Email" %>
+  </div>
+  <div>
+    <%= f.password_field :password, placeholder: "Password" %>
+  </div>
+  <%= f.submit "Log In", class: 'button musician-button' %>
+<% end %>
+
