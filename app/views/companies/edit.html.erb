@@ -1,0 +1,27 @@
+  <h1>Edit Portfolio Company</h1>
+  <%= form_for @company do |f| %>
+    <div class="container-gray">
+      <div class="input-field">
+        <%= f.text_field :name, placeholder: "Name" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :logo_image, placeholder: "logo image" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :twitter, placeholder: "twitter" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :linkedin, placeholder: "linkedin" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :company_link, placeholder: "company link" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :background_image, placeholder: "background image" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :tag_line, placeholder: "tag line" %>
+      </div>
+      <%= f.submit "Update Company", class: "button" %>
+    </div>
+  <% end %>
