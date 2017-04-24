@@ -1,6 +1,6 @@
 <h1>Welcome to the admins home page</h1>
 
-
+<h1>Partners</h1>
 <p><%= link_to 'Add New Partner', new_partner_path, class: 'button' %></p>
 <% @partners.each do |partner| %>
 
@@ -23,6 +23,8 @@
 
 <br><br>
 
+<h1>Portfolio</h1>
+<p><%= link_to 'Add New Portfolio Company', new_company_path, class: 'button' %></p>
 <% @companies.each do |company| %>
 
   <h5>

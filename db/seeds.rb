@@ -23,7 +23,7 @@ Partner.create([
   },
   {
     name: "Jane Domino",
-    title: "Parner",
+    title: "Partner",
     twitter: "",
     linkedin: "",
     subtitle: "",
