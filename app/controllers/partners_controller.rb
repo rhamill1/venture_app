@@ -1,6 +1,6 @@
 class PartnersController < ApplicationController
 
-  before_action :logged_in?
+  before_action :logged_in?, only: [:create, :new, :edit, :update, :destroy]
   before_action :get_partner, only: [:show, :edit, :update, :destroy]
 
   def new
