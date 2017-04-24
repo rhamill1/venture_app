@@ -1,1 +1,21 @@
 <h1>Welcome to the admins home page</h1>
+
+
+<p><%= link_to 'Add New Partner', new_partner_path, class: 'button' %></p>
+<% @partners.each do |partner| %>
+
+  <h5>
+    <%= partner.name %>
+  </h5>
+
+<% end %>
+
+<br><br>
+
+<% @companies.each do |company| %>
+
+  <h5>
+    <%= company.name %>
+  </h5>
+
+<% end %>
