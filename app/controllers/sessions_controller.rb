@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if @admin
       login(@admin)
       flash[:success] = "Successfully logged in."
-      redirect_to root_path
+      redirect_to admin_path
     else
       flash[:error] = "Incorrect email or password."
       redirect_to login_path
