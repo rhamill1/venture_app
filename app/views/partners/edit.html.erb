@@ -1,0 +1,43 @@
+  <h1>Add New Partner</h1>
+  <%= form_for @partner do |f| %>
+    <div class="container-gray">
+      <div class="input-field">
+        <%= f.text_field :name, placeholder: "Name" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :title, placeholder: "title" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :twitter, placeholder: "twitter" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :linkedin, placeholder: "linkedin" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :subtitle, placeholder: "subtitle" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :bio, placeholder: "bio" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :home_image, placeholder: "home_image" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :bio_image, placeholder: "bio_image" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :background_image, placeholder: "background_image" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :story_image, placeholder: "story_image" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :story_image_text, placeholder: "story_image_text" %>
+      </div>
+      <div class="input-field">
+        <%= f.text_field :signature_image, placeholder: "signature_image" %>
+      </div>
+
+      <%= f.submit "Update", class: "button" %>
+    </div>
+  <% end %>
