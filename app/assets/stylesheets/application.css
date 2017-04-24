@@ -13,3 +13,68 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin: 0;
+}
+
+.landing-background {
+  background-color: #b08272;
+  height: 700px;
+  padding: 5em;
+  color: white;
+  font-family: "Clarendon Text W01 OsF", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  text-align: center;
+}
+
+.landing-background h3 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.landing-background h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.landing-background li {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.white-transition {
+  background-color: white;
+  height: 300px;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Whitney", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: #4a4a4a;
+  margin: 2em;
+  text-align: center;
+}
+
+.white-transition:before, .white-transition:after {
+    content: '';
+    display: block;
+    border-top: 1px solid #979797;
+    margin: 3.75rem auto;
+    width: 15rem;
+}
+
+.partner-div {
+  height: auto;
+  overflow: auto;
+}
+
+.partner-home-image img {
+  max-width: 48%;
+  max-height: 400px;
+  display: inline-block;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin: 5px;
+  float: left;
+}

@@ -1,24 +1,27 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
-
-
-<% @partners.each do |partner| %>
-
-  <h5>
-    <%= partner.name %>
-  </h5>
-
-<% end %>
-
-<br><br>
+<div class='landing-background'>
+  <h3>Venture App</h3>
+  <h1>A new seed investment fund, focused on inclusiveness in growing economies</h1>
+  <li>People</li>
+  <li>Portfolio</li>
+</div>
+<div class='white-transition'>
+  <p>Right now, more entrepreneurs are building billion-dollar companies in the Midwest than in the last 50 years combined.</p>
+</div>
+<div class='partner-div'>
+  <% @partners.each do |partner| %>
+    <div class='partner-home-image'>
+      <%= link_to(image_tag(partner.home_image), partner_path(partner)) %>
+    </div>
+  <% end %>
+</div>
+<div class='white-transition'>
+  <p>At Venture App, we invest in people who have the decades-long conviction necessary to solve big problems.</p>
+  <br>
+  <p>What is the opportunity of your lifetime?</p>
+</div>
 
 <% @companies.each do |company| %>
-
   <h5>
     <%= company.name %>
   </h5>
-
 <% end %>
-
-
-<%= link_to "Log In", login_path %>
